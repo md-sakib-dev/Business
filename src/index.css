@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 0 2px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  li:hover .dot {
+    opacity: 1;
+  }
+  #slider-boxes{
+    display: flex !important;
+
+ 
+  }
+  .slick-slide div{
+    margin: 10px !important;
+  }
+  .slick-arrow:before{
+    color: black;
+    font-size: 30px;
+  }
+
+  .slick-dots li button {
+    width: 5px; /* Adjust the width of the dots */
+    height: 5px; /* Adjust the height of the dots */
+    border-radius: 50%; /* Make dots circular */
+    background-color: black; /* Change dot color here */
+    opacity: 0.75; /* Adjust dot opacity if needed */
+    transition: opacity 0.2s ease; /* Add transition effect for opacity change */
+  }
+  .hover-effect {
+    transition: color 0.3s ease; /* Add transition for color change */
+  }
+  .hover-effect:hover {
+    color: orange;
+  }
+  .gallery-container {
+    max-height: 50vh; 
+    overflow-x: auto; 
+    direction: rtl;
+    padding-left: 5px;
+  }
+  
+  .gallery-container::-webkit-scrollbar {
+    width: 5px; 
+  }
+  
+  .gallery-container::-webkit-scrollbar-track {
+    background: white; /* Background color of scrollbar track */
+  }
+  
+  .gallery-container::-webkit-scrollbar-thumb {
+    background: orange; 
+  }
+
+  .container {
+    position: relative;
+    display: inline-block; /* Ensures that the container only takes up the space of its contents */
+}
+
+.text {
+    position: absolute;
+    bottom: -100%; /* Initially hides the text */
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    padding: 10px;
+    transition: bottom 0.3s ease; /* Adds smooth transition */
+}
+
+.image:hover + .text {
+    bottom: 0; /* Shows the text when the image is hovered over */
+}
+
+
+.fade-in-out {
+  animation: fadeInOut 4s infinite alternate; /* Adjust the duration as needed */
+  opacity: 0; /* Start with opacity 0 */
+  color: #02a8f4;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0; /* Fade in */
+  }
+  50% {
+    opacity: 1; /* Hold */
+  }
+  100% {
+    opacity: 0; /* Fade out */
+  }
+}
