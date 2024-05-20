@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import pic from '../assets/pic2.png'
-import image from '../assets/gallery/bg1.jpg'
+
 import pic1 from '../assets/about.png'
 
 const About = () => {
