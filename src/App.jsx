@@ -20,9 +20,9 @@ function App() {
 <Header/>
    
    <Body/>
-   <Software/>
    <About/>
-   <Services/>
+   <Software/>
+   {/* <Services/> */}
    <Client/>
    <Testimonial/>
      <Section/>   
