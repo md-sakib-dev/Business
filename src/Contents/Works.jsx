@@ -1,10 +1,10 @@
 import React ,{useState} from 'react'
-import pic1 from '../assets/software/acount1.jpg'
-import pic2 from '../assets/software/card.jpg'
-import pic3 from '../assets/software/chain.jpg'
-import pic4 from '../assets/software/erp.jpg'
-import pic5 from '../assets/software/new.jpg'
-import pic6 from '../assets/software/hrm.jpg'
+import pic1 from '../assets/services/acount1.jpg'
+import pic2 from '../assets/services/card.jpg'
+import pic3 from '../assets/services/chain.jpg'
+import pic4 from '../assets/services/erp.jpg'
+import pic5 from '../assets/services/new.jpg'
+import pic6 from '../assets/services/hrm.jpg'
 import { FaBusinessTime } from "react-icons/fa6";
 
 const Works = () => {
