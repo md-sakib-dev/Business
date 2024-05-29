@@ -70,7 +70,7 @@ const Body = () => {
            <h1 className='text-xl md:text-5xl font-normal'>
                     <span className='fade-in-out'>We are {animatedText} Agency</span> 
                   </h1>
-             <p className='text-md md:text-lg font-normal mt-5'>We are leading technology solutions providing company all over the world doing over 40 years.</p>
+             <p className='text-md md:text-lg font-normal mt-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quod ut eveniet esse adipisci commodi assumenda consequuntur iusto dolores voluptatibus..</p>
             <div className='flex flex-col md:flex-row justify-start gap-5'>
            <button className="text-white bg-custom  hover:text-black hover:bg-white hover:border-gray-400 font-semibold py-4 px-4 rounded w-[250px]">
                View Our Services

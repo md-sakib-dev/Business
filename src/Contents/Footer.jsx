@@ -49,7 +49,7 @@ const Footer = () => {
     </div>
       </div>
       <div className='border-b border-slate-500'>
-    <div className='flex flex-col md:flex-row md:justify-around justify-center gap-2 py-5'>
+    <div className='flex flex-col md:flex-row md:justify-around justify-center items-center gap-2 py-5'>
       <div>
         <img className='items-center w-[150px]' src={pic} alt="" />
       </div>

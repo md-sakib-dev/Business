@@ -3,15 +3,6 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/logo.png";
 import logo1 from "../assets/logo1.png";
 import { Link } from "react-scroll";
-import { BsFillTelephoneOutboundFill } from "react-icons/bs";
-import { IoLocationSharp } from "react-icons/io5";
-import {
-  FaInstagram,
-  FaFacebookF,
-  FaDribbbleSquare,
-  FaGithubSquare,
-  FaTwitterSquare,
-} from "react-icons/fa";
 import { VscThreeBars } from "react-icons/vsc";
 
 import pic1 from '../assets/gallery/pic1.jpg'
@@ -77,15 +68,15 @@ const Header = () => {
     },
     {
       id: 4,
-      link: "skill",
-    },
-    {
-      id: 5,
       link: "works",
     },
     {
-      id: 6,
+      id: 5,
       link: "team",
+    },
+    {
+      id: 6,
+      link: "blog",
     },
     {
       id: 7,
@@ -189,7 +180,7 @@ const Header = () => {
         }}
         className="cursor-pointer  text-gray-500 md:hidden mt-5"
       >
-        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+        {nav ? <FaTimes size={30} /> : <FaBars size={30} color="white" />}
       </div>
 
       {nav && (
@@ -224,7 +215,7 @@ const Header = () => {
      
       <div onClick={()=>{setGal(!gal)}}>
 
-         <CiMenuKebab className="hover-effect md:hidden mt-5"size={30}/>
+         <CiMenuKebab color="white" className="hover-effect md:hidden mt-5"size={30}/>
          </div>
          {gal &&(
   <div className="flex flex-col gap-2 md:hidden  fixed top-0 right-0 w-[60%] h-screen bg-white text-white ease-in-out duration-1000">

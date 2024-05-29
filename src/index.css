@@ -22,19 +22,29 @@
   }
   .slick-slide div{
     margin: 20px !important;
+    transform: translateX(-10px);
   }
   .slick-arrow:before{
     color: black;
     font-size: 30px;
   }
-
+  .slick-prev {
+    left: 1px; /* Adjust this value to move the left arrow */
+    z-index: 1; /* Ensure the arrow is above other elements if needed */
+  }
+  
+  .slick-next {
+    right: 5px; /* Adjust this value to move the right arrow */
+    z-index: 1; /* Ensure the arrow is above other elements if needed */
+  }
   .slick-dots li button {
-    width: 5px; /* Adjust the width of the dots */
-    height: 5px; /* Adjust the height of the dots */
-    border-radius: 50%; /* Make dots circular */
-    background-color: black; /* Change dot color here */
-    opacity: 0.75; /* Adjust dot opacity if needed */
-    transition: opacity 0.2s ease; /* Add transition effect for opacity change */
+    width: 5px; 
+    height: 5px; 
+    border-radius: 50%; 
+    background-color: black; 
+    opacity: 0.75; 
+    transition: opacity 0.2s ease; 
+    transform: translateX(-2px);
   }
   .hover-effect {
     transition: color 0.3s ease; /* Add transition for color change */
